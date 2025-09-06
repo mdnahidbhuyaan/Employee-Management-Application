@@ -5,9 +5,11 @@ import TaskList from '../TaskList/TaskList'
 
 
 
-const EmployeeDashboard = () => {
+const EmployeeDashboard = ({data}) => {
+
   return (
     <div className='p-20'>
+      <h1>{data.id}</h1>
     <Header/>
     <TaskListNumber/>
     <TaskList/>
